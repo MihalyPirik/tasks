@@ -1,0 +1,93 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Tasks",
+    "dateExported": "2024-02-12T09:32:06.857Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-02-12T09:28:47.971Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "tasks",
+            "containerId": "",
+            "created": "2024-02-12T09:28:57.074Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "74781a51-f0e5-45e2-99c9-dcdfaf80f49d",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
+            "name": "register",
+            "url": "http://127.0.0.1:8000/api/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-12T09:30:17.074Z",
+            "modified": "2024-02-12T09:30:42.694Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "11a5432a-3568-401d-b4e5-63e031622f48",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-12T09:30:50.921Z",
+            "modified": "2024-02-12T09:31:04.200Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8fcf0e1d-d05a-4806-9dec-7b4ff40ae7e5",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
+            "name": "logout",
+            "url": "http://127.0.0.1:8000/api/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-12T09:30:52.585Z",
+            "modified": "2024-02-12T09:31:27.017Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
