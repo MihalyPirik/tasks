@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2024-02-12T09:32:06.857Z",
+    "dateExported": "2024-02-12T11:35:54.077Z",
     "version": "1.1",
     "folders": [
         {
@@ -29,7 +29,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-12T09:30:17.074Z",
-            "modified": "2024-02-12T09:30:42.694Z",
+            "modified": "2024-02-12T10:23:46.341Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -41,6 +41,38 @@
                 }
             ],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Josh\",\n  \"email\": \"misi@email.hu\",\n  \"password\": \"12345678\",\n  \"password_confirmation\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ba807747-45f5-459e-b32e-2d16574e12ac",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "getAllTasks",
+            "url": "http://127.0.0.1:8000/api/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-12T11:19:00.102Z",
+            "modified": "2024-02-12T11:34:26.609Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|wtjfLhHCkoWQNjNsBzCIxGab8tj0g1a6CoHt4pBW9681190b"
+            },
             "tests": []
         },
         {
@@ -52,7 +84,7 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-02-12T09:30:50.921Z",
-            "modified": "2024-02-12T09:31:04.200Z",
+            "modified": "2024-02-12T10:24:09.982Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -64,6 +96,11 @@
                 }
             ],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"misi@email.hu\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -75,7 +112,7 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-02-12T09:30:52.585Z",
-            "modified": "2024-02-12T09:31:27.017Z",
+            "modified": "2024-02-12T11:00:37.438Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -87,6 +124,37 @@
                 }
             ],
             "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|ZlgtdWLn1Bjn8UBlLxSrYCJWzMNflSUuofWLvMj72e817fe8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9cce6c5-49b5-4610-845b-1b447b9866a5",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
+            "name": "test",
+            "url": "http://127.0.0.1:8000/api/test",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-12T10:58:20.607Z",
+            "modified": "2024-02-12T11:34:15.565Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|wtjfLhHCkoWQNjNsBzCIxGab8tj0g1a6CoHt4pBW9681190b"
+            },
             "tests": []
         }
     ]

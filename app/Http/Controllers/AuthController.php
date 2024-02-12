@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    public function login(LoginUserRequest $request) {
+    public function login(LoginUserRequest $request)
+    {
         $request->validated();
 
         if (!Auth::attempt($request->only('email', 'password'))) {
@@ -28,11 +29,16 @@ class AuthController extends Controller
         return response()->json($data, 200);
     }
 
-    public function logout() {
-        return "Logged out";
+    public function logout()
+    {
+        Auth::user()->tokens()->delete(); // az összes hozzátartózó tokent törli
+        // Auth::user()->currentAccessToken()->delete(); // csak azt a tokent törli amivel azonosította magát
+
+        return response()->json(["message" => "Logged out"], 200);
     }
 
-    public function register(StoreUserRequest $request) {
+    public function register(StoreUserRequest $request)
+    {
         $request->validated();
 
         $user = User::create([
@@ -47,6 +53,5 @@ class AuthController extends Controller
         ];
 
         return response()->json($data, 201);
-
     }
 }
