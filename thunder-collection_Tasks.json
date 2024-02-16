@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2024-02-12T11:35:54.077Z",
+    "dateExported": "2024-02-16T08:37:38.886Z",
     "version": "1.1",
     "folders": [
         {
@@ -57,7 +57,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-02-12T11:19:00.102Z",
-            "modified": "2024-02-12T11:34:26.609Z",
+            "modified": "2024-02-16T07:20:17.116Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -71,7 +71,34 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "1|wtjfLhHCkoWQNjNsBzCIxGab8tj0g1a6CoHt4pBW9681190b"
+                "bearer": "3|c953qRqe8Wj6xkVr9Dr2CTjNTHz92GlnJQJqd0Gh683ef1a7"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce0dc5f0-73da-4316-a679-742fdbad2a9d",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "search task",
+            "url": "http://127.0.0.1:8000/api/tasks/31",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-02-16T07:35:27.321Z",
+            "modified": "2024-02-16T07:38:06.829Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|c953qRqe8Wj6xkVr9Dr2CTjNTHz92GlnJQJqd0Gh683ef1a7"
             },
             "tests": []
         },
@@ -104,6 +131,38 @@
             "tests": []
         },
         {
+            "_id": "c74e0161-63da-4da8-aae0-5a51004c642c",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "create task",
+            "url": "http://127.0.0.1:8000/api/tasks",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-16T07:28:59.394Z",
+            "modified": "2024-02-16T07:32:45.003Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"10:00 menni kell\",\n  \"description\": \"alma\",\n  \"priority\": \"high\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|c953qRqe8Wj6xkVr9Dr2CTjNTHz92GlnJQJqd0Gh683ef1a7"
+            },
+            "tests": []
+        },
+        {
             "_id": "8fcf0e1d-d05a-4806-9dec-7b4ff40ae7e5",
             "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
             "containerId": "8cffbae1-0cac-4c57-97a7-3d1d0bf83b3f",
@@ -112,7 +171,7 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-02-12T09:30:52.585Z",
-            "modified": "2024-02-12T11:00:37.438Z",
+            "modified": "2024-02-16T07:17:29.777Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -126,7 +185,39 @@
             "params": [],
             "auth": {
                 "type": "bearer",
-                "bearer": "3|ZlgtdWLn1Bjn8UBlLxSrYCJWzMNflSUuofWLvMj72e817fe8"
+                "bearer": "1|ge4xQg1g3Zd4v1nHnFa0xLHWnHbUFjWxndrtjWXcfccc19ef"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c8e335a-7201-4aa1-91d4-c6dbf43eea91",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "update task",
+            "url": "http://127.0.0.1:8000/api/tasks/10",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-02-16T07:42:52.673Z",
+            "modified": "2024-02-16T08:22:39.523Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"10:00 menni kell\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|Y7yKe9F51JYMlcxceYXW4X5N6iFSJOKUpznA0A5F0362cca4"
             },
             "tests": []
         },
@@ -154,6 +245,33 @@
             "auth": {
                 "type": "bearer",
                 "bearer": "1|wtjfLhHCkoWQNjNsBzCIxGab8tj0g1a6CoHt4pBW9681190b"
+            },
+            "tests": []
+        },
+        {
+            "_id": "52a9608d-77b4-41ed-b2f9-18c8fa898a56",
+            "colId": "223a2f32-5ff5-40eb-af8c-a0abcd5d0d33",
+            "containerId": "4e57d8cb-08b5-408c-8a91-c4431ecb9a1c",
+            "name": "delete task",
+            "url": "http://127.0.0.1:8000/api/tasks/14",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-16T08:08:11.758Z",
+            "modified": "2024-02-16T08:35:53.538Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "4|Y7yKe9F51JYMlcxceYXW4X5N6iFSJOKUpznA0A5F0362cca4"
             },
             "tests": []
         }
